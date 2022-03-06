@@ -2,7 +2,7 @@
 
 int main()
 {
-    int ar[50], size, i, sum = 0;
+    int ar[100], size, i, sum = 0;
     printf("Enter array size\n");
     scanf("%d",&size);
     printf("Enter array elements\n");

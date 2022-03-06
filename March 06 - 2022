@@ -1,22 +1,16 @@
-#include <stdio.h>
-int main(){
-   char symbol;
-   float a,b,res = 0;
-   printf(" Enter a symbol to operate /n : "); 
-   scanf("%c", &symbol);
-   printf("Enter the values of Operands a and b \n : ");
-   scanf("%f%f", &a, &b);
-   switch(symbol){
-      case '+': res = a + b;
-         break;
-      case '-': res= a-b;
-         break;
-      case '*': res = a*b;
-         break;
-      case '/': res= a/b;
-         break;
-      default: printf("\n Invalid Operator ");
-   }
-   printf("The value = %f", res);
-   return 0;
+#include<stdio.h>
+
+int main()
+{
+    int ar[50], size, i, sum = 0;
+    printf("Enter array size\n");
+    scanf("%d",&size);
+    printf("Enter array elements\n");
+    for(i = 0; i < size; i++)
+    scanf("%d",&ar[i]); 
+    for(i = 0; i < size; i++)
+    sum = sum + ar[i];
+    printf("Sum of the array = %d\n",sum);
+    
+    return 0;
 }
